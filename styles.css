@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Definido para 0 para evitar espaços extras */
+    padding: 0; /* Definido para 0 para evitar espaços extras */
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column; /* Para usar o layout em coluna */
+    min-height: 100vh; /* Para que o rodapé permaneça na parte inferior da página */
+}
+
+h1 {
+    text-align: center;
+}
+
+.course-structure {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1; /* Para que o conteúdo ocupe o espaço restante */
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 300px;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+.course-structure ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-structure li {
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.computacao {
+    background-color: #98C4EA;
+}
+
+.eletivas {
+    background-color: #FFE894;
+}
+
+.matematicas {
+    background-color: #AADCA8;
+}
+
+.fisicas {
+    background-color: #DFA0BC;
+}
+
+.humanasEsociais {
+    background-color: #BAA1D7;
+}
+
+.TCC {
+    background-color: #FFCB97;
+}
+
+.computacao:hover {
+    background-color: #7292ae;
+}
+
+.eletivas:hover {
+    background-color: #d5c27d;
+}
+
+.matematicas:hover {
+    background-color: #8eb58d;
+}
+
+.fisicas:hover {
+    background-color: #b17e95;
+}
+
+.humanasEsociais:hover {
+    background-color: #9d87b6;
+}
+
+.TCC:hover {
+    background-color: #d3a77b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Para empurrar o rodapé para o final da página */
+    padding: 20px; /* Adicionando algum espaço ao redor do rodapé */
+    background-color: rgb(51, 51, 51); /* Mudando a cor de fundo do rodapé */
+    color: #fff; /* Mudando a cor do texto do rodapé */
+}
+
+.footer-svg {
+    width: 10%;
+    height: auto;
+}
+
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .course-structure {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 10px 0;
+        max-width: none;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .footer-svg {
+        width: 30%;
+    }
+}

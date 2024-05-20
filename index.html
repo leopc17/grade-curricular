@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Curricular - Ciência da Computação</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Estrutura Curricular - Ciência da Computação</h1>
+    <div class="course-structure">
+        <div class="column">
+            <h2>Primeiro Semestre</h2>
+            <ul id="first-semester">
+                <li onclick="showSyllabus('algoritmos')" class="computacao">Algoritmos</li>
+                <li onclick="showSyllabus('introducao-computacao')" class="computacao">Introdução a Computação</li>
+                <li onclick="showSyllabus('ingles-instrumental')" class="humanasEsociais">Inglês Instrumental</li>
+                <li onclick="showSyllabus('leituraEproducao-texto')" class="humanasEsociais">Leitura e Produção de Texto</li>
+                <li onclick="showSyllabus('matematica-discreta')" class="matematicas">Matemática Discreta</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Segundo Semestre</h2>
+            <ul id="second-semester">
+                <li onclick="showSyllabus('linguagem-progI')" class="computacao">Linguagem de Programação I</li>
+                <li onclick="showSyllabus('laboratorio-progI')" class="computacao">Lab. de Programação I (30h)</li>
+                <li onclick="showSyllabus('logica-computacao')" class="computacao">Lógica para Computação</li>
+                <li onclick="showSyllabus('metodologia-cientifica')" class="humanasEsociais">Metodologia Científica</li>
+                <li onclick="showSyllabus('calculoI')" class="matematicas">Cálculo Diferencial e Integral I</li>
+                <li onclick="showSyllabus('teoria-grafos')" class="computacao">Teoria dos Grafos (30h)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Terceiro Semestre</h2>
+            <ul id="third-semester">
+                <li onclick="showSyllabus('linguagem-progII')" class="computacao">Linguagem de Programação II</li>
+                <li onclick="showSyllabus('laboratorio-progII')" class="computacao">Lab. de Programação II (30h)</li>
+                <li onclick="showSyllabus('tcs')" class="humanasEsociais">Tecnologia, Ciência e Sociedade</li>
+                <li onclick="showSyllabus('algebraVetorial-geometriaAnalitica')" class="matematicas">Álgebra Vetorial e Geometria Analítica</li>
+                <li onclick="showSyllabus('calculoII')" class="matematicas">Cálculo Diferencial e Integral II</li>
+                <li onclick="showSyllabus('fisica-computacao')" class="fisicas">Física para Computação (30h)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Quarto Semestre</h2>
+            <ul id="fourth-semester">
+                <li onclick="showSyllabus('arquitetura-computadores')" class="computacao">Organização e Arquitetura de Computadores</li>
+                <li onclick="showSyllabus('estrutura-dados')" class="computacao">Estrutura de Dados</li>
+                <li onclick="showSyllabus('lab-estrutura-dados')" class="computacao">Lab. de Estrutura de Dados (30h)</li>
+                <li onclick="showSyllabus('sistemas-informacao')" class="computacao">Sistemas de Informação</li>
+                <li onclick="showSyllabus('algebra-linear')" class="matematicas">Álgebra Linear</li>
+                <li onclick="showSyllabus('paradigmas-linguagens')" class="computacao">Paradigmas de Linguagens de Programação (30h)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Quinto Semestre</h2>
+            <ul id="fifth-semester">
+                <li onclick="showSyllabus('banco-dadosI')" class="computacao">Banco de Dados I</li>
+                <li onclick="showSyllabus('analise-proj-sistemas')" class="computacao">Análise e Projeto de Sistemas</li>
+                <li onclick="showSyllabus('linguagens-formais')" class="computacao">Linguagens Formais e Teoria da Computação</li>
+                <li onclick="showSyllabus('probabilidade-estatistica')" class="matematicas">Probabilidade e Estatística</li>
+                <li onclick="showSyllabus('metodos-avancados-prog')" class="computacao">Métodos Avançados de Programação</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Sexto Semestre</h2>
+            <ul id="sixth-semester">
+                <li onclick="showSyllabus('banco-dadosII')" class="computacao">Banco de Dados II</li>
+                <li onclick="showSyllabus('engenharia-softwareI')" class="computacao">Engenharia de Software I</li>
+                <li onclick="showSyllabus('calculo-numerico')" class="matematicas">Cálculo Numérico</li>
+                <li onclick="showSyllabus('redes-computadoresI')" class="computacao">Redes de Computadores I</li>
+                <li onclick="showSyllabus('laboratorio-engI')" class="computacao">Lab. Engenharia de Software I (30h)</li>
+                <li onclick="showSyllabus('etica-computacao')" class="humanasEsociais">Ética em Computação (30h)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Sétimo Semestre</h2>
+            <ul id="seventh-semester">
+                <li onclick="showSyllabus('sistemas-operacionais')" class="computacao">Sistemas Operacionais</li>
+                <li onclick="showSyllabus('gerenciamento-projetos')" class="computacao">Gerenciamento de Projetos</li>
+                <li onclick="showSyllabus('engenharia-softwareII')" class="computacao">Engenharia de Software II</li>
+                <li onclick="showSyllabus('redes-computadoresII')" class="computacao">Redes de Computadores II</li>
+                <li onclick="showSyllabus('tecnica-analise-algoritmos')" class="computacao">Técnicas e Análise de Algoritmos</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Oitavo Semestre</h2>
+            <ul id="eighth-semester">
+                <li onclick="showSyllabus('compiladores')" class="computacao">Compiladores</li>
+                <li onclick="showSyllabus('interface-humano-computador')" class="computacao">Projeto Interface Humano-Computador</li>
+                <li onclick="showSyllabus('sistemas-distribuidos')" class="computacao">Sistemas Distribuidos</li>
+                <li onclick="showSyllabus('programacao-web')" class="computacao">Programação Web</li>
+                <li onclick="showSyllabus('IA')" class="computacao">Inteligência Artificial</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Nono Semestre</h2>
+            <ul id="ninth-semester">
+                <li onclick="showSyllabus('sistemas-compiladores')" class="computacao">Computação Gráfica</li>
+                <li class="eletivas">Eletiva I</li>
+                <li class="eletivas">Eletiva II</li>
+                <li onclick="showSyllabus('TCCI')" class="TCC">TCC I (60h)</li>
+                <li class="eletivas">Eletiva III</li>
+                <li class="eletivas">Eletiva IV</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Décimo Semestre</h2>
+            <ul id="tenth-semester">
+                <li class="eletivas">Eletiva V</li>
+                <li onclick="showSyllabus('TCCII')" class="TCC">TCC II (60h)</li>
+                <li class="eletivas">Estágio Eletivo (360h)</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <div id="syllabusModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <h2>Ementa</h2>
+            <p id="syllabus-content">Clique em uma matéria para ver a ementa.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <img src="./img/logorodape2.svg" alt="" class="footer-svg">
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
